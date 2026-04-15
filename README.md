@@ -1,33 +1,43 @@
 # Sales Prediction Model for Inventory Optimization
 
-# Problem
-Businesses often face losses due to overstocking or understocking of products. Accurate sales prediction helps in better inventory planning.
+## Problem
+Retail businesses often face losses due to overstocking and understocking. Accurate sales prediction is essential for efficient inventory management and demand planning.
 
-# Solution
-Developed a machine learning model to predict monthly fruit sales using historical data, seasonal trends, and promotional factors.
+## Solution
+Developed a machine learning pipeline using the BigMart dataset to predict product-level sales across different outlets. The model leverages features such as product price (Item MRP), outlet type, and visibility.
 
-# Results
-- Achieved 92% prediction accuracy
-- Reduced inventory surplus by 15%
-- Improved demand forecasting efficiency
+## Results
+- Achieved strong predictive performance based on R2 score
+- Decision Tree outperformed Linear Regression by capturing non-linear patterns
+- Identified key drivers of sales such as Item MRP and Outlet Type
 
-# Tech Stack
+## Tech Stack
 - Python
-- Pandas
+- Pandas, NumPy
 - Scikit-learn
-- Matplotlib
+- Matplotlib, Seaborn
 
-# Project Workflow
-1. Data Collection
-2. Data Cleaning & Preprocessing
-3. Feature Engineering
-4. Model Training (Linear Regression)
-5. Model Evaluation
+## Project Workflow
+1. Data Cleaning & Missing Value Handling  
+2. Exploratory Data Analysis (EDA)  
+3. Feature Engineering  
+4. Model Building (Linear Regression, Decision Tree)  
+5. Model Evaluation & Comparison  
 
-# How to Run
-1. Clone the repository
-2. Install required libraries
-3. Run the notebook or Python script
+## Key Insights
+- Sales are positively correlated with Item MRP  
+- Supermarket outlets generate higher sales than grocery stores  
+- Promotional and location factors significantly influence demand  
 
-# Output
-(Add graphs/screenshots here once uploaded)
+## Business Impact
+- Helps businesses optimize inventory and reduce waste  
+- Supports better demand forecasting  
+- Improves decision-making for pricing and stocking  
+
+## How to Run
+1. Clone the repository  
+2. Install required libraries (`pip install -r requirements.txt`)  
+3. Open and run the notebook  
+
+## Project File
+- `sales_prediction_model.ipynb` – Complete implementation with EDA, modeling, and evaluation
